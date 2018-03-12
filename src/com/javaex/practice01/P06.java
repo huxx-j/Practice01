@@ -7,25 +7,22 @@ public class P06 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("숫자를 입력하세요");
         int num = scanner.nextInt();
-        int evenSum = 0;
-        int oddSum = 0;
+        int sum = 0;
 
         if (num % 2 == 0) {
             for (int i = num; i >= 1; i--) {
-                //
                 if (i % 2 == 0) {
-                    evenSum += i;
+                    sum += i;
                 }
             }
-            System.out.println("결과값 : " + evenSum);
         } else{
             for (int i = num; i >= 1; i--) {
                 if (i % 2 == 1) {
-                    oddSum += i;
+                    sum += i;
                 }
             }
-            System.out.println("결과값 : " + oddSum);
         }
+        System.out.println("결과값 : " + sum);
     }
 }
 
